@@ -105,7 +105,7 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
     <meta charset="utf-8" />
     <title>Example HTML5 Document</title>
   </head>
-  <body>
+  <body class="antialiased max-w-4xl mx-4 mt-8 lg:mx-auto">
     <p>Test</p>
   </body>
 </html>
@@ -121,7 +121,7 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
     <meta charset="utf-8" />
     <title>Example HTML5 Document</title>
   </head>
-  <body>
+  <body class="antialiased max-w-4xl mx-4 mt-8 lg:mx-auto">
     <p>Test</p>
   </body>
 </html>
