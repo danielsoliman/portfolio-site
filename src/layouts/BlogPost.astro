@@ -22,18 +22,19 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			<article>
 				<div class="prose">
 					<div class="title">
-						<div class="date">
+						<h1 class="text-5xl pb-8">{title}</h1>
+						<div class="date mb-2 text-base text-neutral-600 dark:text-neutral-400">
 							<FormattedDate date={pubDate} />
 							{
-								updatedDate && (
-									<div class="last-updated-on">
+								updatedDate ? (
+									<div>
 										Last updated on <FormattedDate date={updatedDate} />
 									</div>
-								)
+								) : null
 							}
 						</div>
-						<h1>{title}</h1>
-						<hr />
+						{description ? <div class="mb-16 text-base text-neutral-600 dark:text-neutral-400">{description}</div> : null}
+						<div ></div>
 					</div>
 					<slot />
 				</div>
