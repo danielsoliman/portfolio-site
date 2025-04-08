@@ -1,7 +1,8 @@
 @import 'tailwindcss';
 @import "tw-animate-css";
 /* @import 'tailwind/prefilight'; */
-@custom-variant dark (&:is(.dark *));
+/* @custom-variant dark (&:is(.dark *)); */
+@custom-variant dark (&:where(.dark, .dark *));
 
 ::selection {
   background-color: #47a3f3;

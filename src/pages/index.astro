@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Main from '../layouts/main.astro';
 import DanielsPhoto from '/public/images/daniels.jpg';
+import { Button } from '../components/ui/button';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
@@ -12,15 +13,14 @@ import DanielsPhoto from '/public/images/daniels.jpg';
 		<section>
 			<div class="flex flex-col sm:flex-row gap-x-0 md:gap-x-8 lg:gap-x-16 pt-4 md:pt-8 lg:pt-16">
 			  <article>
-				<h1 class="mb-8 text-2xl font-semibold tracking-tighter">
+				<h1 class="mb-1 text-2xl font-semibold tracking-tighter">
 				  Daniel Soliman
 				</h1>
+				<h4 class="mb-4 text-base text-neutral-700">Construction Planner and Front End Engineer</h4>
 				<p class="mb-4">
 				  Hi I’m Daniel — a construction planner and tech enthusiast with 20+
-				  years of experience building hospitals, stadiums, multi-family, and
-				  multi-use projects around the US (mostly Miami). I believe the key
-				  to a successful project is knowing priorities and understanding how
-				  .
+				  years of experience. I was the scheduler at the Marlins Ballpark, Brickelly City Centre, LAX, and other condos, hospitals, and airports. I believe the key
+				  to a successful project is understanding priorities and how the plan works in a constantly changing environement.
 				</p>
 				<p class="mb-4">
 				  I'm currently the co-founder of{" "}
@@ -30,9 +30,7 @@ import DanielsPhoto from '/public/images/daniels.jpg';
 					target="_blank"
 					rel="noopener"
 				  >
-					Planflow
-				  </a>
-				  , a construction operations platform that helps construction teams
+					Planflow</a>, a construction operations platform that helps construction teams
 				  execute on schedule, improve productivity, and finish early.
 				</p>
 				<p class="mb-4">
@@ -42,10 +40,7 @@ import DanielsPhoto from '/public/images/daniels.jpg';
 					href="https://www.robinsmorton.com"
 					target="_blank"
 					rel="noopener noreferrer"
-				  >
-					Robins & Morton
-				  </a>
-				  , an ENR100 healthcare general contractor, where I manage multiple
+				  >Robins & Morton</a>, an ENR100 healthcare general contractor, where I manage multiple
 				  projects, train Superintendents on CPM scheduling, administer
 				  Primevara and develop internal tools like{" "}
 				  <a
@@ -87,14 +82,16 @@ import DanielsPhoto from '/public/images/daniels.jpg';
 				  <!-- <BlogPosts /> -->
 				</div>
 			  </article>
-			  <figure class="py-0.5 shrink-0">
+			  <div class="flex flex-col items-center justify-center w-full gap-4 md:gap-8">
+				<figure class="py-0.5 shrink-0">
 				<img
 				  class="rounded-full w-32 h-32 md:w-48 md:h-48"
 				  src={DanielsPhoto.src}
 				  alt="photo of Daniel Soliman"
 				  loading="lazy"
-				/>
-			  </figure>
+				/></figure>
+			  <Button variant={'social'}><a href="/cv_daniel_soliman.pdf" target="_blank">View my CV</a></Button>
+			</div>
 			</div>
 		  </section>
 	</Main>
